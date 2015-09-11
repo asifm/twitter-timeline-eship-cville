@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Timeline</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 border">
+                <h4>Option 1: Tweets based on a search query >></h4>
+                <p>Search based on these conditions: </p>
+                <ul>
+                    <li>Any of these terms: entrepreneurship OR startup OR entrepreneurs OR entrepreneurial OR eship </li>
+                    <li>AND any of these terms: UVA OR "University of Virginia" OR Charlottesville OR cville</li>
+                    <li>Excludes: amsterdam (to prevent UvA or University of Amsterdam from appearing) </li>
+                </ul>
+                <p>Send suggestions about how to improve the query to Asif Mehedi at MehediA@darden.virginia.edu</p>
+            </div>
+            <div class="col-md-3">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=entrepreneurship%20OR%20startup%20OR%20entrepreneurs%20OR%20entrepreneurial%20OR%20eship%20UVA%20OR%20%22University%20of%20Virginia%22%20OR%20Charlottesville%20OR%20cville%20-amsterdam" data-widget-id="642393286414610432">Tweets about entrepreneurship OR startup OR entrepreneurs OR entrepreneurial OR eship UVA OR "University of Virginia" OR Charlottesville OR cville -amsterdam</a>
+            </div>
+            <div class="col-md-3">
+                <h4>Option 2: Tweets based on a list of users >></h4>
+                <p>Tweets from a curated list of users who tweets mostly about entrepreneurship and innovation in Charlottesville.</p>
+                <p>This list is just a start. Please suggest who is missing to Asif Mehedi at MehediA@darden.virginia.edu</p>
+            </div>
+            <div class="col-md-3">
+                <a class="twitter-timeline" href="https://twitter.com/Asif_Mehedi/lists/eship-cville" data-widget-id="642403276269428736">Tweets from https://twitter.com/Asif_Mehedi/lists/eship-cville</a>
+            </div>
+        </div>
+    </div>
+    <script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + "://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+    </script>
+</body>
+
+</html>
